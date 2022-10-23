@@ -42,3 +42,39 @@ t : bar
 - 하지만 isomorphic은 1:1 매핑 관계를 성립해야하므로 t의 b문자가 2개의 key를 갖는 것은 isomorphic하지 않음을 의미하게된다.
 - 따라서 hash map 2를 만들어 t를 key로, s를 value로 하는 map을 하나더 만든다. (속도 측면으로 유리)
 - 이후 map2[t[i]] != s[i] 이면, false를 return 해준다.
+
+```cpp
+class Solution {
+public:
+    bool isIsomorphic(string s, string t) {        
+        if ((s.size() == 1) && (t.size() == 1))
+            return true;
+        
+        unordered_map<char, char> patternDict;
+        unordered_map<char, char> patternDict2;
+        bool result = true;
+        
+        for(int i = 0; i < s.size(); ++i) {
+            if (patternDict.find(s[i]) != patternDict.end()) {
+                if (patternDict[s[i]] != t[i]) {
+                    result = false;
+                    break;
+                }
+            } else if (patternDict2.find(t[i]) != patternDict.end()) {
+                result = false;
+                break;
+            } else {
+                patternDict[s[i]] = t[i];
+                patternDict2[t[i]] = s[i];
+            }
+        }
+        
+        
+        for (pair<char, char> p : patternDict) {
+            cout << p.first << ", " << p.second << endl;
+        }
+        
+        return result;
+    }
+};
+```
