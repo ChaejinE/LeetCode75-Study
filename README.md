@@ -4,4 +4,4 @@
 | :--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 2 |String|Isomorphic Strings | 1 | Easy | [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day2/IsomorphicStrings.md)
 | 2 |String|IsSubsequence | 1 | Easy | [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/submissions/) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day2/IsSubsequence.md)
-| 3 |Linked List|MergeTwoSortedLists | 1 | Easy | [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/submissions/) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day2/IsSubsequence.md)
+| 3 |Linked List|MergeTwoSortedLists | 1 | Easy | [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/?envType=study-plan&id=level-1) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day3/MergeTwoSortedLists.md)
