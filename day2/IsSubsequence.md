@@ -1,5 +1,4 @@
 # Intro
-- 해결하지 못했다.
 
 # Solution
 ```cpp
