@@ -8,3 +8,5 @@
 | 3 |Linked List|ReverseLinkedList | 1 | Easy | [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day3/ReverseLinkedList.md)
 | 4 |Linked List|Middle of the Linked List | 1 | Easy | [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/?envType=study-plan&id=level-1) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day4/MiddleOfTheLinkedList.md)
 | 4 |Linked List|Linked List Cycle II | 1 | Medium | [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/?envType=study-plan&id=level-1) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day4/LinkedListCycleII.md)
+| 5 |Greedy|Best Time to Buy and Sell Stock | 1 | Easy | [121. Best Time to Buy and Sell Stock
+](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [풀이](https://github.com/ChaejinE/LeetCode75-Study/blob/main/day5/BestTimetoBuyandSellStock.md)
