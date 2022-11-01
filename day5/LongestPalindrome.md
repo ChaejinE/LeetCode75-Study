@@ -41,3 +41,21 @@ public:
   - 이는 이미 unique 문자 하나를 넣은 경우가 추가되었는지를 확인하면 된다.
   - ```((result % 2 == 0) && (p.first % 2 == 1))```
   - 계속 저장 중인 가장 긴Palindrome을 만드는 경우의 길이가 짝수이고, 해당 문자가 홀수라면 +1을 해준다. 아마 한번 정도 ? 일어날 것이다.
+
+## The Other
+```cpp
+class Solution {
+public:
+    int longestPalindrome(const string &s) 
+    {
+        int count[128]{};
+        for (auto c : s) 
+            ++count[c];
+        for (auto num : count) 
+            count[0] += num & 1;
+        return s.size() - count[0] + (count[0] > 0);
+    }
+};
+```
+- 해당 데이터가 등장할 때마다 ++ 연산해주는게 더 빠를 수 있다는 생각이 드는 풀이다.
+- & 연산으로 홀, 짝을 구분하고 0번 인덱스가 존재하는지에 따라 1을 더 해주면서 좀더 깔끔해진 풀이다.
